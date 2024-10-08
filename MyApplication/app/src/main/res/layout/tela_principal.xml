@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Mensagem de boas-vindas -->
+    <TextView
+        android:id="@+id/textBemVindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem-vindo! Escolha uma calculadora:"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:paddingBottom="32dp"/>
+
+    <!-- Botão para a calculadora de IMC -->
+    <Button
+        android:id="@+id/buttonCalculadoraIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora IMC"
+        android:layout_gravity="center" />
+
+    <!-- Botão para a calculadora de peso ideal -->
+    <Button
+        android:id="@+id/buttonCalculadoraPesoIdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de Peso Ideal"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão para a calculadora de altura ideal -->
+    <Button
+        android:id="@+id/buttonCalculadoraAlturaIdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de Altura Ideal"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

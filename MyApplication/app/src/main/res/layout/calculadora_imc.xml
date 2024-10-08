@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Seleção de sexo -->
+    <RadioGroup
+        android:id="@+id/radioGroupSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/radioFeminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feminino" />
+    </RadioGroup>
+
+    <!-- Campo para altura -->
+    <EditText
+        android:id="@+id/editAlturaIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Altura (m)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Campo para peso -->
+    <EditText
+        android:id="@+id/editPesoIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso (kg)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão para calcular o IMC -->
+    <Button
+        android:id="@+id/buttonCalcularIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular IMC"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp" />
+
+    <!-- Exibição do resultado -->
+    <TextView
+        android:id="@+id/textResultadoIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado do IMC aparecerá aqui"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Seleção de sexo -->
+    <RadioGroup
+        android:id="@+id/radioGroupSexoPesoIdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioMasculinoPesoIdeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/radioFemininoPesoIdeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feminino" />
+    </RadioGroup>
+
+    <!-- Campo para altura -->
+    <EditText
+        android:id="@+id/editAlturaPesoIdeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Altura (m)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão para calcular o peso ideal -->
+    <Button
+        android:id="@+id/buttonCalcularPesoIdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Peso Ideal"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp" />
+
+    <!-- Exibição do resultado -->
+    <TextView
+        android:id="@+id/textResultadoPesoIdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado do peso ideal aparecerá aqui"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
